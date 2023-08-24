@@ -1,7 +1,7 @@
 import { Trash } from "phosphor-react";
 import styles from "./Tasks.module.css";
 
-export interface TasksProps {
+interface TasksProps {
   id: string;
   title: string;
   done: boolean;

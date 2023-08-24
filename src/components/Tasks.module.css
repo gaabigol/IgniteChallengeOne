@@ -1,12 +1,14 @@
 .ContainerTasks {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Alinha os itens nas extremidades */
   align-items: center;
   flex-direction: row;
   align-self: stretch;
+  box-sizing: content-box;
+  overflow: hidden;
 
   width: 704px;
-  height: 90px;
+  height: 60px;
   border-radius: 8px;
   border: 1px solid #333;
   background: #262626;
@@ -16,7 +18,6 @@
   margin-top: 25px;
   margin: auto;
 }
-
 
 /* Para telas com largura até 768px */
 @media (max-width: 768px) {
@@ -36,6 +37,8 @@
 
 @media (max-width: 576px) {
   .ContainerTasks {
+    width: 100%;
+    height: auto;
     padding: 10px;
     gap: 6px;
   }
@@ -50,7 +53,6 @@
   position: absolute;
   cursor: pointer;
 }
-
 
 .ContainerTasks input[type="checkbox"] + label {
   display: inline-block;
@@ -92,6 +94,7 @@
 }
 
 .ContainerTasks button {
+  position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,6 +104,7 @@
   background: transparent;
   border-radius: 4px;
   color: #808080;
+  margin-left: 12px;
 }
 
 .ContainerTasks button:hover {
