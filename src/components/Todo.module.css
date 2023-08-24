@@ -1,0 +1,168 @@
+.ContainerInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: -27px;
+}
+
+.ContainerInput input {
+  width: 606px;
+  height: 52px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #0d0d0d;
+  background: #262626;
+}
+
+.ButtonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #1e6f9f;
+}
+
+.ButtonContainer span {
+  color: #f2f2f2;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.ContainerCountTasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+  margin-bottom: 25px;
+}
+
+.tasks {
+  color: #4ea8de;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 8px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 9px;
+  height: 15px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #333;
+  color: #d9d9d9;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.conclusion {
+  margin-left: 486px;
+  margin-right: 8px;
+  color: #8284fa;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.taskSpacing {
+  margin-bottom: 20px;
+}
+
+.ContainerWithoutTasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  width: 736px;
+  height: 244px;
+  gap: 16px;
+  border-radius: 8px;
+  border-top: 1px solid var(--grey-400, #333);
+  padding: 64px 24px;
+  margin: auto;
+}
+
+.ContainerWithoutTasks p,
+.ContainerWithoutTasks strong {
+  color:#808080;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.ContainerWithoutTasks strong {
+  font-weight: 700;
+}
+
+.task-spacing {
+  margin-bottom: 20px;  /* Ajuste o valor conforme necessário */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .ContainerInput {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ContainerInput input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .ButtonContainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .ContainerCountTasks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .conclusion {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+
+  .ContainerWithoutTasks {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .ContainerInput input {
+    width: 80%;
+
+  }
+
+  .ContainerWithoutTasks {
+    width: 80%;
+   
+  }
+}
